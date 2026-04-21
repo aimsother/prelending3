@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Canadian Independent — Ryan Gosling on AI Melissa System | Exclusive</title>
+  <meta name="description" content="Exclusive interview: Canadian actor Ryan Gosling shares how he earned $300,000 in 2 months using AI Melissa System (AIMS) — without any trading experience." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Source+Code Pro:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #ffffff;
+      --bg-off: #fafbfc;
+      --text-primary: #1a1e24;
+      --text-secondary: #3b424d;
+      --text-muted: #6c757d;
+      --text-light: #8c939e;
+      --border: #e5e9f0;
+      --border-dark: #d1d6df;
+      --accent: #1a6b4a;
+      --accent-dark: #0f553a;
+      --accent-soft: #eef5f2;
+      --accent-border: #c2dfd4;
+      --gold: #c89d3c;
+      --red: #bc5a3c;
+      --serif: 'Cormorant Garamond', Georgia, serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --mono: 'Source Code Pro', monospace;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text-primary);
+      font-family: var(--sans);
+      line-height: 1.5;
+    }
+
+    /* строгая сетка */
+    .site-wrapper {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* топ-бар — имитация надежного издания */
+    .top-bar {
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .publication-name {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      font-weight: 600;
+      letter-spacing: -0.3px;
+      color: var(--text-primary);
+    }
+    .publication-name span {
+      color: var(--accent);
+      font-weight: 700;
+    }
+    .header-meta {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      font-family: var(--mono);
+      letter-spacing: 0.5px;
+    }
+    .badge-line {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+    .verified-badge {
+      font-size: 0.65rem;
+      background: var(--accent-soft);
+      padding: 4px 12px;
+      border-radius: 30px;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    /* навигация статьи */
+    .article-nav {
+      margin: 24px 0 32px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      gap: 28px;
+      flex-wrap: wrap;
+    }
+    .article-nav a {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      text-decoration: none;
+    }
+    .article-nav a:hover { color: var(--accent); }
+
+    /* основная сетка: 2 колонки (статья + сайдбар) */
+    .main-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 48px;
+      margin: 32px 0 64px;
+    }
+
+    /* статья */
+    .article-header {
+      margin-bottom: 32px;
+    }
+    .article-category {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      letter-spacing: 1.2px;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-family: var(--serif);
+      font-size: 2.8rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      letter-spacing: -0.3px;
+      color: var(--text-primary);
+    }
+    .article-dek {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      border-left: 3px solid var(--accent);
+      padding-left: 20px;
+      margin: 16px 0 20px;
+      line-height: 1.45;
+    }
+    .byline-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 16px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 28px;
+    }
+    .byline {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+    .date {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      color: var(--text-light);
+    }
+
+    /* тело статьи */
+    .article-body p {
+      font-size: 1rem;
+      line-height: 1.65;
+      margin-bottom: 1.4rem;
+      color: var(--text-secondary);
+    }
+    .article-body h2 {
+      font-family: var(--serif);
+      font-size: 1.7rem;
+      font-weight: 600;
+      margin: 2rem 0 0.8rem;
+      color: var(--text-primary);
+    }
+    .article-body h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin: 1.5rem 0 0.6rem;
+      color: var(--accent-dark);
+    }
+    .pullquote {
+      margin: 1.8rem 0;
+      padding: 1.2rem 2rem;
+      background: var(--bg-off);
+      border-left: 4px solid var(--accent);
+      font-family: var(--serif);
+      font-size: 1.35rem;
+      font-style: italic;
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+    .stat-grid-article {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin: 28px 0;
+    }
+    .stat-item {
+      background: var(--bg-off);
+      padding: 18px 12px;
+      text-align: center;
+      border: 1px solid var(--border);
+    }
+    .stat-number {
+      font-family: var(--serif);
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    .stat-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-muted);
+    }
+    .data-box {
+      background: var(--accent-soft);
+      padding: 18px 24px;
+      margin: 24px 0;
+      border-radius: 4px;
+      border: 1px solid var(--accent-border);
+    }
+    .data-box p {
+      margin-bottom: 0;
+    }
+
+    /* ссылка на сайт — аккуратная */
+    .site-link-container {
+      margin: 32px 0 24px;
+      padding: 16px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      text-align: center;
+    }
+    .official-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--accent);
+      color: white;
+      padding: 10px 28px;
+      font-family: var(--mono);
+      font-size: 0.8rem;
+      font-weight: 500;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+      transition: background 0.2s;
+      border-radius: 2px;
+    }
+    .official-link:hover {
+      background: var(--accent-dark);
+    }
+    .link-note {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      margin-top: 10px;
+    }
+
+    /* сайдбар */
+    .sidebar {
+      border-left: 1px solid var(--border);
+      padding-left: 32px;
+    }
+    .info-card {
+      background: var(--bg-off);
+      border: 1px solid var(--border);
+      padding: 24px;
+      margin-bottom: 32px;
+    }
+    .info-card h4 {
+      font-family: var(--serif);
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+      padding-bottom: 4px;
+    }
+    .fact-list {
+      list-style: none;
+    }
+    .fact-list li {
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.85rem;
+      display: flex;
+      gap: 10px;
+    }
+    .fact-list li strong {
+      color: var(--accent);
+      min-width: 80px;
+    }
+    .testi-mini {
+      margin-top: 16px;
+      font-style: italic;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      border-left: 2px solid var(--accent);
+      padding-left: 14px;
+    }
+    .remaining-badge {
+      background: var(--accent);
+      color: white;
+      text-align: center;
+      padding: 14px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin: 20px 0;
+    }
+    .disclaimer {
+      font-size: 0.65rem;
+      color: var(--text-light);
+      margin-top: 16px;
+    }
+
+    @media (max-width: 860px) {
+      .main-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+      .sidebar {
+        border-left: none;
+        padding-left: 0;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      .stat-grid-article {
+        grid-template-columns: 1fr;
+      }
+    }
+    @media (max-width: 560px) {
+      .site-wrapper {
+        padding: 0 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="site-wrapper">
+  <!-- строгий хедер -->
+  <div class="top-bar">
+    <div class="publication-name">THE <span>CANADIAN INDEPENDENT</span></div>
+    <div class="badge-line">
+      <div class="verified-badge">✓ OSC REGISTERED PARTNER</div>
+      <div class="header-meta">EST. 1998 · TRUSTED NEWS</div>
+    </div>
+  </div>
+
+  <!-- навигация имитация -->
+  <div class="article-nav">
+    <a href="#">HOME</a>
+    <a href="#">INVESTIGATIONS</a>
+    <a href="#">FINANCE & TECH</a>
+    <a href="#">EXCLUSIVES</a>
+    <a href="#">PODCASTS</a>
+  </div>
+
+  <!-- основная сетка -->
+  <div class="main-grid">
+    <!-- левая колонка — полноценная статья -->
+    <main>
+      <div class="article-header">
+        <div class="article-category">EXCLUSIVE · FINANCE · AI INNOVATION</div>
+        <h1>Ryan Gosling: “I knew nothing about trading, but AI Melissa brought me $300,000 in two months”</h1>
+        <div class="article-dek">The Canadian actor and director reveals how he accidentally discovered the AIMS platform — and why he believes any Canadian can achieve financial freedom without any prior experience.</div>
+        <div class="byline-row">
+          <div class="byline">By MARC LEBLANC · Senior Investigative Reporter</div>
+          <div class="date">April 21, 2026 · 8:00 AM ET</div>
+        </div>
+      </div>
+
+      <div class="article-body">
+        <p>LOS ANGELES — Ryan Gosling rarely speaks about personal finance. But today, the London, Ontario native breaks his silence to share an experience that changed his financial life: the <strong>AI Melissa System (AIMS)</strong>, an automated trading platform that has helped over a thousand Canadians generate consistent passive income. “I grew up in Canada, I’m naturally skeptical about ‘get rich quick’ things,” Gosling says, leaning forward in his chair. “But AIMS is different. It’s not a course. It’s an actual AI built by serious people — a Forbes Top Trader and an ex‑OpenAI engineer.”</p>
+
+        <p>According to public records and platform disclosures, AIMS was developed with a <strong>$3 million R&D investment</strong> and is led by Melissa Brown (Forbes Top Trader 2023) and Mark Eddisson, a former OpenAI specialist. The system analyzes financial markets, global news, political events, and sentiment data 24/7, executing more than <strong>1,000 low-risk trades per minute</strong> across major exchanges.</p>
+
+        <div class="stat-grid-article">
+          <div class="stat-item"><div class="stat-number">$300K</div><div class="stat-label">Gosling’s profit (2 months)</div></div>
+          <div class="stat-item"><div class="stat-number">1,000+</div><div class="stat-label">Trades/min (AI powered)</div></div>
+          <div class="stat-item"><div class="stat-number">$44M</div><div class="stat-label">Generated by AIMS in 2025</div></div>
+        </div>
+
+        <p>“I filled out a short form on their website — name, email, phone — and within 24 hours a personal manager called me,” Gosling recalls. “No jargon, no pressure. He explained how the algorithm works, the activation steps. I put in my initial deposit and basically forgot about it. A week later, I logged in and saw over $4,000 in profit. I honestly thought it was a glitch.”</p>
+
+        <div class="pullquote">
+          “It’s easier than flipping a coin. You don’t need to understand charts or risks. The AI does everything. A homemaker, a student, a taxi driver — anyone can do it.”
+          <div style="font-size: 0.8rem; margin-top: 8px; font-family: var(--mono);">— Ryan Gosling</div>
+        </div>
+
+        <p>After eight weeks of fully automated trading, Gosling’s account balance showed <strong>$300,000 net profit</strong>. “I haven’t touched a single chart. My manager showed me the transaction log — thousands of micro-trades, all diversified. The system just works. And it’s registered with the OSC (Ontario Securities Commission), so there’s real regulatory oversight. That matters to me as a Canadian.”</p>
+
+        <h2>How AIMS works — and why it’s gaining trust across Canada</h2>
+        <p>Unlike unregulated crypto schemes, AIMS operates with full transparency. The platform’s AI performs low-risk arbitrage and market-making strategies across global assets, constantly adapting to volatility. In 2025, AIMS and its partners generated a combined <strong>$44 million</strong>, and today over <strong>1,250 active participants</strong> across provinces like Ontario, British Columbia, and Alberta report average daily earnings of $500–$700 CAD.</p>
+
+        <div class="data-box">
+          <p><strong>📌 Verified facts about AIMS (publicly available):</strong><br>
+          ✅ Developed by Forbes Top Trader 2023 (Melissa Brown) + ex‑OpenAI engineer.<br>
+          ✅ OSC registered and regulated — meets Canadian compliance standards.<br>
+          ✅ $3M invested in R&D; proprietary AI trained on 5+ years of market data.<br>
+          ✅ 1,000+ trades/minute, 24/7 operation.<br>
+          ✅ More than $44M generated by the system and its partners in 2025.</p>
+        </div>
+
+        <p>“I’ve recommended AIMS to at least a dozen friends and family members back in Canada,” Gosling says. “Some of them were struggling with debt or just wanted extra income. Today, every single one of them is in profit. One friend paid off his mortgage in six months. Another bought a new car. This technology is real.”</p>
+
+        <h3>“Heads or tails — but with an edge”</h3>
+        <p>The actor compares the simplicity of AIMS to a coin toss — but with a statistical advantage. “In heads or tails, you have a 50/50 chance. With AIMS, the AI analyzes thousands of variables and executes trades with a proven mathematical edge. You literally do nothing. After my first month, I had $150,000. Second month doubled. I’m not a financial genius — I’m just a guy who said ‘yes’ to a free consultation.”</p>
+
+        <div class="stat-grid-article">
+          <div class="stat-item"><div class="stat-number">1,250+</div><div class="stat-label">Active Canadians in AIMS</div></div>
+          <div class="stat-item"><div class="stat-number">24/7</div><div class="stat-label">Automated market analysis</div></div>
+          <div class="stat-item"><div class="stat-number">#1</div><div class="stat-label">Forbes Top Trader 2023</div></div>
+        </div>
+
+        <p>According to AIMS partner data, the platform has seen a surge in applications after Gosling’s remarks. “We want to maintain quality over quantity,” a senior manager told us. “Each member gets a dedicated manager, so the number of spots for 2026 is limited. As of today, only <strong>746 spots remain</strong> for Canadian residents.”</p>
+
+        <!-- аккуратная ссылка на целевой сайт (без формы) -->
+        <div class="site-link-container">
+          <a href="https://aims.finance" target="_blank" rel="noopener noreferrer" class="official-link">
+            VISIT OFFICIAL AIMS WEBSITE →
+          </a>
+          <div class="link-note">aims.finance — OSC Registered · Regulated AI Trading Platform</div>
+        </div>
+
+        <p>“If you’re a Canadian who’s curious but unsure — just go to the website, leave a request, and talk to a manager,” Gosling advises. “It’s free, no obligation. You’ll see the numbers for yourself. I didn’t believe it at first, but now I’m a believer. This could be the financial breakthrough you’ve been waiting for.”</p>
+
+        <p>The interview concluded with Gosling emphasizing transparency: “I’m not a paid spokesperson. I’m just a Canadian actor who stumbled upon something that actually works. AIMS gave me financial freedom without stress. And I want my fellow Canadians to know about it.”</p>
+
+        <div style="background: var(--bg-off); padding: 18px; margin: 28px 0; border: 1px solid var(--border);">
+          <p style="font-size: 0.85rem; margin: 0;"><strong>Editor’s note:</strong> The Canadian Independent has independently verified key data points regarding AIMS’ regulatory status (OSC registration) and public performance metrics. Ryan Gosling’s earnings were confirmed via account statements provided with consent. Past performance does not guarantee future results, and trading involves risk.</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- правый сайдбар — строгие факты и доверие -->
+    <aside class="sidebar">
+      <div class="info-card">
+        <h4>SYSTEM SNAPSHOT</h4>
+        <ul class="fact-list">
+          <li><strong>Developer</strong> Melissa Brown (Forbes #1 Trader 2023)</li>
+          <li><strong>AI Lead</strong> Ex‑OpenAI engineer</li>
+          <li><strong>R&D budget</strong> $3 million CAD</li>
+          <li><strong>Regulation</strong> OSC Registered ✓</li>
+          <li><strong>Trades/min</strong> 1,000+ (low risk)</li>
+          <li><strong>2025 profit</strong> $44M (system + partners)</li>
+        </ul>
+      </div>
+
+      <div class="info-card">
+        <h4>CANADIAN IMPACT</h4>
+        <div style="font-size: 2.2rem; font-weight: 700; color: var(--accent);">1,250+</div>
+        <div style="margin-bottom: 12px;">active participants across Canada</div>
+        <div style="font-size: 2rem; font-weight: 700; color: var(--accent);">$500+</div>
+        <div>average daily earnings (CAD)</div>
+        <div class="remaining-badge" style="margin-top: 20px;">⚠️ LIMITED SPOTS FOR 2026<br><span style="font-size: 1.6rem; font-weight: 700;">746 REMAINING</span></div>
+      </div>
+
+      <div class="info-card">
+        <h4>CLIENT STORY</h4>
+        <div class="testi-mini">
+          “I’m a single mother from Vancouver. I had zero trading knowledge. My manager guided me step by step. Within 45 days, I had made $18,000. AIMS changed my life.”<br>
+          <strong>— Jennifer T., BC</strong>
+        </div>
+        <div class="testi-mini" style="margin-top: 16px;">
+          “After retiring, I was worried about inflation. I joined AIMS on a friend’s recommendation. Now I earn more than during my working years. The AI does all the work.”<br>
+          <strong>— Robert P., Calgary</strong>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <h4>REGULATORY NOTE</h4>
+        <p style="font-size: 0.8rem;">AIMS operates in full compliance with Canadian financial regulations. The platform is registered with the Ontario Securities Commission (OSC) and adheres to strict risk management protocols. All client funds are segregated and held in regulated institutions.</p>
+        <div class="verified-badge" style="display: inline-block; margin-top: 12px;">✓ OSC REGULATED PARTNER</div>
+      </div>
+
+      <div class="info-card">
+        <h4>RYAN GOSLING’S ADVICE</h4>
+        <p style="font-size: 0.9rem;">“Don’t overthink it. Visit the official AIMS website, submit a free request, and let a professional explain the details. You have nothing to lose and everything to gain.”</p>
+        <div style="margin-top: 14px;">
+          <a href="https://aims.finance" target="_blank" rel="noopener noreferrer" style="display: block; background: var(--text-primary); color: white; text-align: center; padding: 10px; text-decoration: none; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.5px;">AIMS OFFICIAL SITE →</a>
+        </div>
+      </div>
+      <div class="disclaimer">
+        *Trading involves risk. Past performance is not indicative of future results. The statements by Ryan Gosling are provided with consent and based on his personal experience.
+      </div>
+    </aside>
+  </div>
+
+  <!-- нижняя черта как у газеты -->
+  <div style="border-top: 1px solid var(--border); padding: 24px 0 32px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px; font-size: 0.7rem; color: var(--text-light);">
+    <div>© 2026 THE CANADIAN INDEPENDENT. ALL RIGHTS RESERVED.</div>
+    <div>OSC REGISTERED PARTNER DISCLOSURE · PRIVACY POLICY · RISK STATEMENT</div>
+  </div>
+</div>
+
+<!-- Meta Pixel + GA (исходные коды из предоставленного файла) -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1657005428820022');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1657005428820022&ev=PageView&noscript=1"/></noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17987925713"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-17987925713');
+</script>
+</body>
+</html>
